@@ -13,9 +13,17 @@ public class eneController {
 	
 	@Controller
 	public class TestController {
-	    @GetMapping("home")
+	    @GetMapping("/home")
 	    public String  jspPage() {
 	       return "home";
+	    }
+	}
+	
+	@Controller
+	public class comingSoon {
+	    @GetMapping("/")
+	    public String  jspPage() {
+	       return "comingSoon";
 	    }
 	}
 

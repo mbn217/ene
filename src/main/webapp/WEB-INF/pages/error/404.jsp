@@ -88,7 +88,7 @@ img {
 <body>
 	<div id="g">
 		<h1>Sorry We Couldn't find that page.</h1>
-		<a href="/home" title="Autoconx">Go back</a> <br /> <a
+		<a href="/" title="Autoconx">Go back</a> <br /> <a
 			href="https://www.amazon.com/dogsofamazon" target="_blank"><img
 			id="d" alt="Dogs of Amazon"></a>
 		<script>
