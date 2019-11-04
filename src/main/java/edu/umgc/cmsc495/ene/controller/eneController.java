@@ -15,7 +15,7 @@ public class eneController {
 	public class TestController {
 	    @GetMapping("/home")
 	    public String  jspPage() {
-	       return "home";
+	       return "sellBooksPage";
 	    }
 	}
 	
@@ -23,7 +23,7 @@ public class eneController {
 	public class comingSoon {
 	    @GetMapping("/")
 	    public String  jspPage() {
-	       return "comingSoon";
+	       return "eneHomePage";
 	    }
 	}
 
