@@ -12,19 +12,42 @@ public class eneController {
 	Logger logger = LoggerFactory.getLogger(eneController.class);
 	
 	@Controller
-	public class TestController {
-	    @GetMapping("/home")
+	public class sell {
+	    @GetMapping("/sell")
 	    public String  jspPage() {
-	       return "sellBooksPage";
+	       return "sellBooks";
 	    }
 	}
 	
 	@Controller
-	public class comingSoon {
+	public class eneHome {
 	    @GetMapping("/")
 	    public String  jspPage() {
-	       return "eneHomePage";
+	       return "eneHome";
+	    }
+	}
+	
+	@Controller
+	public class loginRegister {
+	    @GetMapping("/login")
+	    public String  jspPage() {
+	       return "login_register";
 	    }
 	}
 
+	@Controller
+	public class howItWorks {
+	    @GetMapping("/howitworks")
+	    public String  jspPage() {
+	       return "howItWorks";
+	    }
+	}
+	
+	@Controller
+	public class support {
+	    @GetMapping("/support")
+	    public String  jspPage() {
+	       return "support";
+	    }
+	}
 }

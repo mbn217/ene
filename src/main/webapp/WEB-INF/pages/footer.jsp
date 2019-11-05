@@ -4,7 +4,7 @@
 
 
 
-				<!-- Footer -->
+		<!-- Footer -->
 		<footer class="page-footer font-small blue">
 
 		  <!-- Copyright -->
@@ -17,4 +17,3 @@
 		<!-- Footer -->
 				
 				
-</html>

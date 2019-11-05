@@ -1,12 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="ISO-8859-1">
-			<link href="css/bootstrap.min.css" rel="stylesheet" />
-			<link href="css/main.css" rel="stylesheet" />
-			<title>ene book store</title>
-			<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	</head>
+	
+					<div class="header--container">
+					<nav class="site-header sticky-top py-1">
+						<div class="container d-flex flex-column flex-md-row justify-content-between">
+							<a class="logo" href="/">
+							<img class="navbar-brand" src="img/logo.png">
+							</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="howitworks">How It Works</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="#">Sell Books</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="#">Buy Books</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="#">Rent Books</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="support">Support</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="login">Sign In</a>
+							<span></span>
+						</div>
+					</nav>
+				</div>

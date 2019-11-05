@@ -62,7 +62,12 @@ hr {
 	width: 40%;
 }
 
-
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
 
 
 .searchbar{
@@ -119,6 +124,132 @@ hr {
     font-weight: 700;
     font-style: inherit;
 	}
+	
+	
+	
+	.card {
+	width: 300px;
+	}
+
+	.nav-item .nav-link[disabled]:hover {
+	}
+	
+	
+	
+	
+	
+	.md-stepper-horizontal {
+	display:table;
+	width:90%;
+	margin:0 auto;
+}
+
+.md-stepper-horizontal .md-step {
+	display:table-cell;
+	position:relative;
+padding: 1%;
+}
+.md-stepper-horizontal .md-step .md-step-bar-left,
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	position:absolute;
+	top:36px;
+	height:1px;
+	border-top:1px solid #999999;
+}
+.md-stepper-horizontal .md-step .md-step-bar-right {
+	right:0;
+	left:50%;
+	margin-left: 10%;
+}
+.md-stepper-horizontal .md-step .md-step-bar-left {
+	left:0;
+	right:50%;
+	margin-right: 10%;
+}
+.md-stepper-horizontal .md-step .md-step-circle {
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+        box-sizing: border-box;
+      }
+
+      *:active {
+        outline:none;
+      }
+
+a.circle {
+  position: relative;
+width: 3em;
+    height: 3em;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 3em;
+   font-size: 1em;
+    display: block;
+  margin: 0 auto .7em auto;
+text-align: center;
+border-radius: 50%;
+  border: 2px solid #072441;
+    background-color: #072441;
+color: #ffffff;
+font-weight: bold;
+  text-decoration: none;
+}
+
+a.circle:hover {
+  background-color: #2cbfee;
+}
+
+a.circle:active {
+  background-color: #2cbfee;
+}
+
+      #content {
+        height:30%;
+        width: 60%;
+        text-align: center;
+        margin: 0px auto;
+      }
+
+      main {
+      display:inline-block;
+        margin:0px auto;
+        height:100%;
+        width: 100%;
+       text-align: center;
+      }
+      
+      .page {
+        display: none;
+        background-color:#ffffff;
+        padding: 2%;
+        margin:0px auto;
+        height: 100%;
+        border: 1px solid #999999;
+width: 90%;
+        text-align: left;
+      }
+      
+      .page h2 {
+        margin:0px;
+        color: #2cbfee;
+      }
+      
+      .default {
+        display:block;
+      }
+      
+      :target {
+        display:block
+      }
+      
+      :target ~ .default {
+        display:none;
+      }
+
+
+	
 	
 	
 	
