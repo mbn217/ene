@@ -14,9 +14,9 @@
 							<span></span>
 							<a class="py-2 d-none d-md-inline-block" href="howitworks">How It Works</a>
 							<span></span>
-							<a class="py-2 d-none d-md-inline-block" href="#">Sell Books</a>
+							<a class="py-2 d-none d-md-inline-block" href="sellBooks">Sell Books</a>
 							<span></span>
-							<a class="py-2 d-none d-md-inline-block" href="#">Buy Books</a>
+							<a class="py-2 d-none d-md-inline-block" href="buyBooks">Buy Books</a>
 							<span></span>
 							<a class="py-2 d-none d-md-inline-block" href="#">Rent Books</a>
 							<span></span>

@@ -13,7 +13,7 @@ public class eneController {
 	
 	@Controller
 	public class sell {
-	    @GetMapping("/sell")
+	    @GetMapping("/sellBooks")
 	    public String  jspPage() {
 	       return "sellBooks";
 	    }
@@ -48,6 +48,13 @@ public class eneController {
 	    @GetMapping("/support")
 	    public String  jspPage() {
 	       return "support";
+	    }
+	}
+	@Controller
+	public class buy {
+	    @GetMapping("/buyBooks")
+	    public String  jspPage() {
+	       return "buyBooks";
 	    }
 	}
 }

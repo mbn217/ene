@@ -14,8 +14,8 @@
 	<body>
 	<jsp:include page="../pages/header.jsp"/>
 	
-	
-			<h1  class="sellBooks">Sell</h1>
+
+			<h1  class="buyBooks">Buy</h1>
 			<br></br><br></br>
 			<form id="searchfunc">
 				
@@ -44,14 +44,7 @@
 			  <div class="form-group row">
 				<label for="publishDate" class="col-sm-1 col-form-label">Publish Date</label>
 				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Publish Date">
-				</div>
-			  </div>
-			  	<!-- Price -->
-			  <div class="form-group row">
-				<label for="publishDate" class="col-sm-1 col-form-label">Price</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Price">
+				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Pulisg Date">
 				</div>
 			  </div>
 				  <div class="form-group">
@@ -65,8 +58,42 @@
 					  <option>Health Care</option>
 					</select>
 				  </div>
+				  <div class = "results">
+				  <label  class="searchToSell">Results:</label>
+					<div class="table-responsive">
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th scope="col">#</th>
+							  <th scope="col">Book Name</th>
+							  <th scope="col">Author Name</th>
+							  <th scope="col">ISBN #</th>
+							  <th scope="col">Publish Date</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>Mark</td>
+							  <td>Otto</td>
+							  <td>@mdo</td>
+							</tr>
+							<tr>
+							  <th scope="row">2</th>
+							  <td>Jacob</td>
+							  <td>Thornton</td>
+							  <td>@fat</td>
+							</tr>
+							<tr>
+							  <th scope="row">3</th>
+							  <td colspan="2">Larry the Bird</td>
+							  <td>@twitter</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+					</div>
 			</form>
-			
 			
 			
 	</body>
