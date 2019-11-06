@@ -47,6 +47,80 @@
 		        </div>
 		    </div>
 		</div>
+		
+		<!-- Conctact -->
+		<section id="contact2" class="contact2"><!-- background pattern -->
+			
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12 ">
+
+                            <!-- contact form -->
+                            <div class="contact-form">
+
+                                <form class="clearfix" accept-charset="utf-8" method="get" action="#">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-6 form-group wow fadeInDown" data-wow-delay="700ms" data-wow-duration="1000ms">
+
+                                            <label class="sr-only" for="name">Your Name</label>									
+
+                                            <input type="text" placeholder="Your Name" name="name" class="form-control input-lg" required="">										
+
+                                        </div>
+
+                                        <div class="col-sm-6 form-group wow fadeInDown" data-wow-delay="700ms" data-wow-duration="1000ms">
+
+                                            <label class="sr-only" for="email">Email Address</label>
+
+                                            <input type="email" placeholder="Your Email" name="email" class="form-control input-lg" required="">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12 form-group wow fadeInDown" data-wow-delay="900ms" data-wow-duration="1000ms">
+
+                                            <label class="sr-only">Phone Number</label>
+
+                                            <input type="tel" placeholder="Phone Number" name="tel" class="form-control input-lg">                                         
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12 form-group wow fadeInDown" data-wow-delay="1000ms" data-wow-duration="1000ms">
+
+                                            <label class="sr-only" for="message">Write Message</label>
+
+                                                <textarea rows="6" name="message" id="message" class="form-control input-lg " placeholder="Write Massage" required=""></textarea>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- submit button -->
+                                    <button class="btn btn-success btn-lg btn-block wow fadeInDown" data-wow-delay="1200ms" data-wow-duration="1000ms" type="submit">Send Message</button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+		
 					
 					
 	</body>
