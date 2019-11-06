@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 			<link href="css/bootstrap.min.css" rel="stylesheet" />
 			<link href="css/main.css" rel="stylesheet" />
 			<title>ene book store</title>
