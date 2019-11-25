@@ -69,39 +69,6 @@ footer {
   height: 2.5rem;            /* Footer height */
 }
 
-
-.searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
-    }
-
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 750px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e74c3c;
-    }
-
     .search_icon{
     height: 40px;
     width: 40px;
@@ -253,7 +220,7 @@ width: 90%;
 	
 .form-control {
     display: block;
-    width: 60%;
+    width: 90%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -269,7 +236,7 @@ width: 90%;
 }
 	
 	.table {
-    width: 70%;
+    width: 100%;
     margin-bottom: 1rem;
     color: #212529;
 }

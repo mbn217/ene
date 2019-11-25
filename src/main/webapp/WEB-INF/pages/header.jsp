@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 	
 					<div class="header--container">
@@ -18,11 +19,26 @@
 							<span></span>
 							<a class="py-2 d-none d-md-inline-block" href="buyBooks">Buy Books</a>
 							<span></span>
-							<a class="py-2 d-none d-md-inline-block" href="#">Rent Books</a>
+							<a class="py-2 d-none d-md-inline-block" href="rentBooks">Rent Books</a>
 							<span></span>
 							<a class="py-2 d-none d-md-inline-block" href="support">Support</a>
 							<span></span>
-							<a class="py-2 d-none d-md-inline-block" href="login">Sign In</a>
+							<a class="py-2 d-none d-md-inline-block" href="/checkout">Cart</a>
+							<span></span>
+							<a class="py-2 d-none d-md-inline-block" href="/checkoutRentBook">Rent Cart</a>
+							<span></span>
+							<c:if test="${booksSoldByUser != null and user != null}">
+								<a class="py-2 d-none d-md-inline-block" href="myBucks">My Bucks</a>
+								<span></span>
+							</c:if>
+							<c:choose>
+								<c:when test="${user != null}">
+									<a class="py-2 d-none d-md-inline-block" href="logout">Logout</a>
+								</c:when>
+								<c:otherwise>
+									<a class="py-2 d-none d-md-inline-block" href="login">Sign In</a>
+								</c:otherwise>
+							</c:choose>
 							<span></span>
 						</div>
 <!-- 						<a href="https://github.com/mbn217/ene" class="github-corner" aria-label="View source on GitHub">

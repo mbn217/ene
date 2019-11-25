@@ -1,0 +1,132 @@
+2019-11-25 16:35:50.976  INFO 8524 --- [main] edu.umgc.cmsc495.ene.EneMain             : Starting EneMain on OCL0181414 with PID 8524 (C:\Users\Mohamed.Nheri\git\ene\target\classes started by Mohamed.Nheri in C:\Users\Mohamed.Nheri\git\ene)
+2019-11-25 16:35:51.010  INFO 8524 --- [main] edu.umgc.cmsc495.ene.EneMain             : No active profile set, falling back to default profiles: default
+2019-11-25 16:35:52.531  INFO 8524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-11-25 16:35:52.543  INFO 8524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 16:35:52.550  INFO 8524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 16:35:52.799  INFO 8524 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-25 16:35:52.802  INFO 8524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 16:35:52.802  INFO 8524 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1693 ms
+2019-11-25 16:35:52.851  WARN 8524 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eneController': Unsatisfied dependency expressed through field 'bookService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookDAO'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookDAOImpl': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-25 16:35:52.855  INFO 8524 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-25 16:35:52.869  INFO 8524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-25 16:35:52.972 ERROR 8524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in edu.umgc.cmsc495.ene.dao.BookDAOImpl required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2019-11-25 16:37:06.031  INFO 1400 --- [main] edu.umgc.cmsc495.ene.EneMain             : Starting EneMain on OCL0181414 with PID 1400 (C:\Users\Mohamed.Nheri\git\ene\target\classes started by Mohamed.Nheri in C:\Users\Mohamed.Nheri\git\ene)
+2019-11-25 16:37:06.034  INFO 1400 --- [main] edu.umgc.cmsc495.ene.EneMain             : No active profile set, falling back to default profiles: default
+2019-11-25 16:37:07.016  INFO 1400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-11-25 16:37:07.023  INFO 1400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 16:37:07.024  INFO 1400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 16:37:07.234  INFO 1400 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-25 16:37:07.238  INFO 1400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 16:37:07.238  INFO 1400 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1124 ms
+2019-11-25 16:37:07.282  WARN 1400 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eneController': Unsatisfied dependency expressed through field 'bookService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookDAO'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookDAOImpl': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-25 16:37:07.285  INFO 1400 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-25 16:37:07.296  INFO 1400 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-25 16:37:07.379 ERROR 1400 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in edu.umgc.cmsc495.ene.dao.BookDAOImpl required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2019-11-25 16:42:34.587  INFO 11104 --- [main] edu.umgc.cmsc495.ene.EneMain             : Starting EneMain on OCL0181414 with PID 11104 (C:\Users\Mohamed.Nheri\git\ene\target\classes started by Mohamed.Nheri in C:\Users\Mohamed.Nheri\git\ene)
+2019-11-25 16:42:34.590  INFO 11104 --- [main] edu.umgc.cmsc495.ene.EneMain             : No active profile set, falling back to default profiles: default
+2019-11-25 16:42:35.392  INFO 11104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-11-25 16:42:35.400  INFO 11104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 16:42:35.401  INFO 11104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 16:42:35.622  INFO 11104 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-25 16:42:35.625  INFO 11104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 16:42:35.626  INFO 11104 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 979 ms
+2019-11-25 16:42:35.673  WARN 11104 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eneController': Unsatisfied dependency expressed through field 'bookService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookDAO'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookDAOImpl': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-25 16:42:35.676  INFO 11104 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-25 16:42:35.687  INFO 11104 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-25 16:42:35.792 ERROR 11104 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dataSource in edu.umgc.cmsc495.ene.dao.BookDAOImpl required a bean of type 'javax.sql.DataSource' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'dataSource' in 'JndiDataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType'
+	- Bean method 'dataSource' in 'XADataSourceAutoConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2019-11-25 16:44:16.819  INFO 12324 --- [main] edu.umgc.cmsc495.ene.EneMain             : Starting EneMain on OCL0181414 with PID 12324 (C:\Users\Mohamed.Nheri\git\ene\target\classes started by Mohamed.Nheri in C:\Users\Mohamed.Nheri\git\ene)
+2019-11-25 16:44:16.824  INFO 12324 --- [main] edu.umgc.cmsc495.ene.EneMain             : No active profile set, falling back to default profiles: default
+2019-11-25 16:44:17.725  INFO 12324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 16:44:17.760  INFO 12324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-11-25 16:44:18.016  INFO 12324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 16:44:18.246  INFO 12324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-11-25 16:44:18.255  INFO 12324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 16:44:18.256  INFO 12324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 16:44:18.596  INFO 12324 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-25 16:44:18.602  INFO 12324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 16:44:18.602  INFO 12324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1687 ms
+2019-11-25 16:44:18.650  INFO 12324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-25 16:44:18.786  INFO 12324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-25 16:44:18.862  INFO 12324 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2019-11-25 16:44:19.116  INFO 12324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-25 16:44:19.185  INFO 12324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-25 16:44:19.340  INFO 12324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-25 16:44:19.488  INFO 12324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-25 16:44:19.719  INFO 12324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-25 16:44:19.728  INFO 12324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-25 16:44:19.817  WARN 12324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-25 16:44:19.951  INFO 12324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-25 16:44:20.144  INFO 12324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-11-25 16:44:20.147  INFO 12324 --- [main] edu.umgc.cmsc495.ene.EneMain             : Started EneMain in 3.895 seconds (JVM running for 4.962)
+2019-11-25 16:44:36.265  INFO 12324 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-25 16:44:36.268  INFO 12324 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-25 16:44:36.278  INFO 12324 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms

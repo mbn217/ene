@@ -8,78 +8,78 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
 			<link href="css/bootstrap.min.css" rel="stylesheet" />
 			<link href="css/main.css" rel="stylesheet" />
+			
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/sellBook.js"></script>
 			<title>ene book store</title>
 	</head>
-
 	<body>
 	<jsp:include page="../pages/header.jsp"/>
 	
-	
-			<h1  class="sellBooks">Sell</h1>
+			<h1 class="sellBooks">Sell Book</h1>
 			<br></br><br></br>
-			<form id="searchfunc">
+			<form id="sellBookForm">
 				
 				<!-- Book Name -->
 			  <div class="form-group row">
-				<label for="bookName" class="col-sm-1 col-form-label">Book Name</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Book Name">
+				<label for="bookTitle" class="col-sm-offset-2 col-sm-2 col-form-label">Book Title</label>
+				<div class="col-sm-6">
+				  <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="Enter Book Title">
 				</div>
 			  </div>
 				<!-- Author Name -->
 			  <div class="form-group row">
-				<label for="authorName" class="col-sm-1 col-form-label">Author Name</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Author Name">
+				<label for="author" class="col-sm-offset-2 col-sm-2 col-form-label">Author Name</label>
+				<div class="col-sm-6">
+				  <input type="text" class="form-control" name="author" id="author" placeholder="Enter Author Name">
 				</div>
 			  </div>
 				<!-- ISBN  -->
 			  <div class="form-group row">
-				<label for="isbn" class="col-sm-1 col-form-label">ISBN #</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter ISBN #">
+				<label for="isbn" class="col-sm-offset-2 col-sm-2 col-form-label">ISBN #</label>
+				<div class="col-sm-6">
+				  <input type="text" class="form-control" name="isbn" id="isbn" placeholder="Enter ISBN #">
 				</div>
 			  </div>
-				<!-- Author Name -->
+				<!-- Publish Date -->
 			  <div class="form-group row">
-				<label for="publishDate" class="col-sm-1 col-form-label">Publish Date</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Publish Date">
+				<label for="publishedDate" class="col-sm-offset-2 col-sm-2 col-form-label">Publish Date</label>
+				<div class="col-sm-6">
+				  <input type="date" class="form-control" name="publishedDate" id="publishedDate" >
 				</div>
 			  </div>
 			  	<!-- Price -->
 			  <div class="form-group row">
-				<label for="publishDate" class="col-sm-1 col-form-label">Price</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword" placeholder="Enter Price">
+				<label for="price" class="col-sm-offset-2 col-sm-2 col-form-label">Price</label>
+				<div class="col-sm-6">
+				  <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price">
 				</div>
 			  </div>
-				  <div class="form-group">
-					<label for="exampleFormControlSelect1">Category</label>
-					<select class="form-control" id="exampleFormControlSelect1">
-					  <option>Technical books</option>
-					  <option>Novels</option>
-					  <option>Religious</option>
-					  <option>political</option>
-					  <option>Comic</option>
-					  <option>Health Care</option>
-					</select>
+				  <div class="form-group row">
+					<label for="bookCategory" class="col-sm-offset-2 col-sm-2 col-form-label">Category</label>
+					<div class="col-sm-6">
+						<select class="form-control" name="bookCategory" id="bookCategory">
+						  <option>Technical books</option>
+						  <option>Novels</option>
+						  <option>Religious</option>
+						  <option>Political</option>
+						  <option>Comic</option>
+						  <option>Health Care</option>
+						</select>
+					</div>
 				  </div>
+				<div class="form-group row">
+					<div class="col-sm-offset-6 col-sm-6">
+						<button type="submit" id="submitSellFormBtn" class="btn btn-primary">
+							Submit
+						</button>
+						<button id="clearSellFormBtn" class="btn btn-success" onclick="clearForm();">
+							Clear
+						</button>
+					</div>
+				</div>  
 			</form>
-			
-			
-			
 	</body>
-				
-
-
-
- 
- 
- 
- 
- 
- 
 
 <jsp:include page="../pages/footer.jsp"/>
 
