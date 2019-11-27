@@ -60,16 +60,16 @@ public class BookDAOImpl implements BookDAO {
 			
 			if(book != null) {
 				if(book.getBookTitle() != null && book.getBookTitle() != "") {
-					query.append(" and bookTitle like '%" + book.getBookTitle() + "%'");
+					query.append(" and bookTitle ILIKE '%" + book.getBookTitle() + "%'");
 				}
 				if(book.getAuthor() != null && book.getAuthor() != "") {
-					query.append(" and bookAuthor like '%"+ book.getAuthor() + "%'");
+					query.append(" and bookAuthor ILIKE '%"+ book.getAuthor() + "%'");
 				}
 				if(book.getBookCategory() != null && book.getBookCategory() != "") {
 					query.append(" and bookCategory = '"+book.getBookCategory()+"'");
 				}
 				if(book.getIsbn() != null && book.getIsbn() != "") {
-					query.append(" and isbn = '"+book.getIsbn()+"'");
+					query.append(" and isbn ILIKE '%"+ book.getIsbn() + "%'");
 				}
 			}
         		
@@ -169,7 +169,7 @@ public class BookDAOImpl implements BookDAO {
 		StringBuilder query = new StringBuilder("SELECT id, bookTitle, bookAuthor, bookCategory, isbn, publishDate, price, userId from BOOK ");
 		
 		if(searchTerm != null) {
-			query.append(" where bookTitle like '%" + toSearch + "%' OR bookAuthor like '%"+toSearch+"%' OR isbn like '%"+toSearch+"%'");
+			query.append(" where bookTitle ILIKE '%" + toSearch + "%' OR bookAuthor ILIKE '%"+toSearch+"%' OR isbn ILIKE '%"+toSearch+"%'");
 		}
 		try (Connection connection = dataSource.getConnection();
 	             PreparedStatement ps = connection.prepareStatement(query.toString())) {

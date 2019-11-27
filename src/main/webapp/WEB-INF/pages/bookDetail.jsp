@@ -41,6 +41,12 @@
 				    </div>
 				  </div>
 				  <div class="form-group row">
+				    <label for="author" class="col-sm-4 col-form-label">ISBN</label>
+				    <div class="col-sm-8">
+				      <label for="author" class="col-sm-6 col-form-label">${book.isbn}</label>
+				    </div>
+				  </div>
+				  <div class="form-group row">
 				    <label for="publishedDate" class="col-sm-4 col-form-label">Published Date</label>
 				    <div class="col-sm-8">
 				      <label for="publishedDate" class="col-sm-6 col-form-label">${book.publishedDate}</label>
