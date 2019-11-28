@@ -1,7 +1,17 @@
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body, html {
-	height: 100%
+	height: 100%;
 }
+.pb-2, .py-2{
+    color: #1f92b5;
+}
+div.footer-copyright{
+    color: #1f92b5;
+}
+.middle{
+    font-family: "Courier New", Courier, monospace;
+}
+
 
 
 
@@ -19,9 +29,9 @@ body, html {
 	/* Add a white text color to all elements inside the .bgimg container */
 	color: white;
 	/* Add a font */
-	font-family: "Courier New", Courier, monospace;
-	/* Set the font-size to 25 pixels */
-	font-size: 25px;
+/*	font-family: "Courier New", Courier, monospace;
+	!* Set the font-size to 25 pixels *!
+	font-size: 25px;*/
 }
 
 /* Position text in the top-left corner */
@@ -93,50 +103,16 @@ footer {
 	}
 	
 	
-	
+
 	.card {
 	width: 300px;
 	}
 
 	.nav-item .nav-link[disabled]:hover {
 	}
-	
-	
-	
-	
-	
-	.md-stepper-horizontal {
-	display:table;
-	width:90%;
-	margin:0 auto;
-}
 
-.md-stepper-horizontal .md-step {
-	display:table-cell;
-	position:relative;
-padding: 1%;
-}
-.md-stepper-horizontal .md-step .md-step-bar-left,
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	position:absolute;
-	top:36px;
-	height:1px;
-	border-top:1px solid #999999;
-}
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	right:0;
-	left:50%;
-	margin-left: 10%;
-}
-.md-stepper-horizontal .md-step .md-step-bar-left {
-	left:0;
-	right:50%;
-	margin-right: 10%;
-}
-.md-stepper-horizontal .md-step .md-step-circle {
-  margin: 0 auto;
-  text-align: center;
-}
+
+
 * {
         box-sizing: border-box;
       }
@@ -186,7 +162,7 @@ a.circle:active {
         width: 100%;
        text-align: center;
       }
-      
+
       .page {
         display: none;
         background-color:#ffffff;
@@ -197,27 +173,27 @@ a.circle:active {
 width: 90%;
         text-align: left;
       }
-      
+
       .page h2 {
         margin:0px;
         color: #2cbfee;
       }
-      
+
       .default {
         display:block;
       }
-      
+
       :target {
         display:block
       }
-      
+
       :target ~ .default {
         display:none;
       }
 
 
-	
-	
+
+
 .form-control {
     display: block;
     width: 90%;
@@ -252,16 +228,51 @@ width: 90%;
     align-content: center;
     text-align: -webkit-center;
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+.content-element{
+    margin:50px 0 0 50px;
+}
+.circles-list ol {
+    list-style-type: none;
+    margin-left: 1.25em;
+    padding-left: 2.5em;
+    counter-reset: li-counter;
+    border-left: 1px solid #00c4cc;
+    position: relative; }
+
+.circles-list ol > li {
+    position: relative;
+    margin-bottom: 3.125em;
+    clear: both; }
+
+.circles-list ol > li:before {
+    position: absolute;
+    top: -0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    left: -3.75em;
+    width: 2.25em;
+    height: 2.25em;
+    line-height: 2.25em;
+    text-align: center;
+    z-index: 9;
+    color: #00c4cc;
+    border: 2px solid #00c4cc;
+    border-radius: 50%;
+    content: counter(li-counter);
+    background-color: #ebeced;
+    counter-increment: li-counter; }
+
+
+
 	
 	
 	

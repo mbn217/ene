@@ -62,5 +62,5 @@
 	</c:if>
 </body>
 
-
+<jsp:include page="../pages/footer.jsp"/>
 </html>

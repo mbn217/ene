@@ -3,11 +3,11 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 	
-					<div class="header--container">
-					<a class="github-fork-ribbon right-top" href="https://github.com/mbn217/ene" 
+
+<%--					<a class="github-fork-ribbon right-top" href="https://github.com/mbn217/ene"
 		  			data-ribbon="Fork me on GitHub" 
-		  			title="Fork me on GitHub">Fork me on GitHub</a>
-					<nav class="site-header sticky-top py-1">
+		  			title="Fork me on GitHub">Fork me on GitHub</a>--%>
+					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
 						<div class="container d-flex flex-column flex-md-row justify-content-between">
 							<a class="logo" href="/">
 							<img class="navbar-brand" src="img/logo.png">
@@ -49,4 +49,4 @@
 			              </svg>
 			            </a> -->
 					</nav>
-				</div>
+

@@ -23,7 +23,7 @@
 				<div class="bgimg">
 					<jsp:include page="../pages/header.jsp"/>
 					<div class="middle">
-						<h1>Rent, buy or sell books</h1>
+						<h1 class="searchlabel">Rent, buy or sell books</h1>
 						<div class="input-group mb-3">
 							<input class="form-control" type="text" name="searchBook" id="searchBook" 
 							style="width: 80%;" placeholder="Search by ISBN, title or author's name" />
