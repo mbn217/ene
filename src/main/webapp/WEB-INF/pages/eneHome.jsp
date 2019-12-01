@@ -12,7 +12,6 @@
 			<link href="css/main.css" rel="stylesheet" />
 			<link href="css/jquery-ui.css" rel="stylesheet" />
 			<title>ene book store</title>
-			<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 			<script src="js/jquery-3.4.1.min.js"></script>			
 			<script src="js/jquery-ui.js"></script>
@@ -24,16 +23,18 @@
 					<jsp:include page="../pages/header.jsp"/>
 					<div class="middle">
 						<h1>Rent, buy or sell books</h1>
-						<div class="input-group mb-3">
-							<input class="form-control" type="text" name="searchBook" id="searchBook" 
-							style="width: 80%;" placeholder="Search by ISBN, title or author's name" />
-							<input class="search_input" type="hidden" name="searchBookHidden" id="searchBookHidden" />
-							<div class="input-group-append">
-								<a href="" id="searchIcon" class="search_icon">
-									<i class="fas fa-search"></i>
-								</a>
+						<form action="submitSearchQuery" method="GET">
+							<div class="input-group mb-3">
+								<input class="form-control" type="text" name="searchBook" id="searchBook" 
+								style="width: 80%;" placeholder="Search by ISBN, title or author's name" />
+								<input class="search_input" type="hidden" id="searchBookHidden" />
+								<div class="input-group-append">
+									<button type="submit" id="searchButton" class="btn btn-success search_icon">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
 							</div>
-						</div>
+						</form>
 						</div>
 					</div>
 				</body>

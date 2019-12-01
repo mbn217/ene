@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
         <jsp:include page="../pages/header.jsp" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
         <link href="css/howItWorks.css" rel="stylesheet" />
         <title>ene book store</title>
     </head>
