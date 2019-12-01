@@ -2,13 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-
-					<nav class="navbar navbar-expand-sm bg-light justify-content-center">
-						<div class="container d-flex flex-column flex-md-row justify-content-between">
-
-	
-	
-	<header>
+<header>
  <!-- A grey horizontal navbar that becomes vertical on small screens -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
 
@@ -65,5 +59,3 @@
 </nav> 
 </header>
 	
-
->>>>>>> feature/hotfix
