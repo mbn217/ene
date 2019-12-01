@@ -31,7 +31,8 @@ $(document).ready(function() {
 			event.preventDefault();
 			$(this).val(ui.item.label);
 			$('#searchBookHidden').val(ui.item.label);
-			$('#searchIcon').attr("href", "/getBook?bookId="+ui.item.value);
+			//$('#searchIcon').attr("href", "/getBook?bookId="+ui.item.value);
 		}
 	});
 });
+

@@ -164,8 +164,16 @@ public class BookDAOImpl implements BookDAO {
 	public List<BookModel> searchBookByCriteria(String searchTerm) {
 
 		List<BookModel> bookList = new ArrayList<>();
-		String[] search = searchTerm.split("=");
-		String toSearch = search[1];
+		String[] search = null;
+		String toSearch = "";
+		if(searchTerm.indexOf("=") > -1) {
+			search = searchTerm.split("=");
+			toSearch = search[1];
+		}
+		else {
+			toSearch=searchTerm;
+		}
+		
 		StringBuilder query = new StringBuilder("SELECT id, bookTitle, bookAuthor, bookCategory, isbn, publishDate, price, userId from BOOK ");
 		
 		if(searchTerm != null) {

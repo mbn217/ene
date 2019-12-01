@@ -264,7 +264,7 @@ public class EneController {
    	 */
     @PostMapping("/getAllBooks")
     @ResponseBody
-    public List<BookModel> getAllBooks(@RequestBody String searchTerm, HttpServletRequest request) {
+    public List<BookModel> getAllBooks(@RequestBody String searchTerm , HttpServletRequest request) {
     	List<BookModel> bookList =  bookService.searchBookByCriteria(searchTerm);
     	return bookList;
     }
@@ -320,6 +320,17 @@ public class EneController {
     	booksInCart.removeIf((RentBook b) -> b.getId() == bookId);
 		request.getSession().setAttribute("rentcart", booksInCart);
 		return "/checkout";
+    }
+
+    /*
+   	 * search book by search criteria
+   	 * and return list of books
+   	 */
+    @GetMapping("/submitSearchQuery")
+    public String getAllBooksAndRedirect(@RequestParam String searchBook, HttpServletRequest request ) {
+    	List<BookModel> bookList =  bookService.searchBookByCriteria(searchBook);
+    	request.getSession().setAttribute("booksFound", bookList);
+    	return "searchResults";
     }
 
 }
