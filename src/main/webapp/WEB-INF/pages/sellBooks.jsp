@@ -18,7 +18,7 @@
 	
 			<h1 class="sellBooks">Sell Book</h1>
 			<br></br><br></br>
-			<form id="sellBookForm">
+			<form id="sellBookForm" style="padding-left: 15px;">
 				
 				<!-- Book Name -->
 			  <div class="form-group row">
