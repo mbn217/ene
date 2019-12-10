@@ -29,9 +29,9 @@ div.footer-copyright{
 	/* Add a white text color to all elements inside the .bgimg container */
 	color: white;
 	/* Add a font */
-/*	font-family: "Courier New", Courier, monospace;
-	!* Set the font-size to 25 pixels *!
-	font-size: 25px;*/
+	/* font-family: "Courier New", Courier, monospace; */
+/* 	!* Set the font-size to 25 pixels *!
+	font-size: 25px; */
 }
 
 /* Position text in the top-left corner */
@@ -277,7 +277,10 @@ width: 90%;
 	
 	
 	
-	
+	.navbar {
+
+	padding: .0rem 0rem; 
+}
 	
 	
 	
