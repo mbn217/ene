@@ -59,7 +59,7 @@
 				  <div class="form-group row">
 				    <label for="price" class="col-sm-4 col-form-label">Price</label>
 				    <div class="col-sm-8">
-				      <label for="price" class="col-sm-6 col-form-label">${book.price}</label>
+				      <label for="price" class="col-sm-6 col-form-label">$${book.price}</label>
 				    </div>
 				  </div>
 		        </div>
