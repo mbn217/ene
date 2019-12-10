@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 	var bookList = null;
 	var form = null;
-	
+
 	$("#searchBook").autocomplete({
-	
+
 		source : function(request, response) {
 			$.ajax({
 				type : "POST",
@@ -35,4 +35,3 @@ $(document).ready(function() {
 		}
 	});
 });
-

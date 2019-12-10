@@ -1,5 +1,4 @@
-
-function removeFromCart(id){
+function removeFromCart(id) {
 	$.ajax({
 		type : "GET",
 		contentType : "application/json",
@@ -18,10 +17,9 @@ function removeFromCart(id){
 	});
 }
 
-
-function addToCart(btn){
+function addToCart(btn) {
 	var bookId = btn.closest("tr").find('td:first').text();
-    btn.prop("disabled",true);
+	btn.prop("disabled", true);
 	$.ajax({
 		type : "GET",
 		contentType : "application/json",
@@ -41,7 +39,7 @@ function addToCart(btn){
 	});
 }
 
-function removeFromCartRentBook(id){
+function removeFromCartRentBook(id) {
 	$.ajax({
 		type : "GET",
 		contentType : "application/json",
@@ -59,4 +57,3 @@ function removeFromCartRentBook(id){
 		}
 	});
 }
-

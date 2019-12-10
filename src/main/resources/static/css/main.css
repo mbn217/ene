@@ -72,8 +72,8 @@ hr {
 	width: 40%;
 }
 
-footer {
-  position: absolute;
+#myfooter {
+  position: center;
   bottom: 0;
   width: 100%;
   height: 2.5rem;            /* Footer height */
@@ -283,6 +283,14 @@ width: 90%;
 }
 	
 	
-	
+	.bg-dark {
+	background-color: #fff !important;
+}
+
+ #mynavbar{
+ color:#1f92b5;
+ }
+ 
+ 
 	
 	

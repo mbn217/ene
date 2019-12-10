@@ -1,10 +1,10 @@
-$(document).ready(function(){
-	
+$(document).ready(function() {
+
 	$("#sellBookForm").submit(function(event) {
 		event.preventDefault();
-		
+
 		var formData = {};
-		
+
 		formData["bookTitle"] = $("#bookTitle").val();
 		formData["author"] = $("#author").val();
 		formData["isbn"] = $("#isbn").val();
@@ -13,7 +13,7 @@ $(document).ready(function(){
 		formData["bookCategory"] = $("#bookCategory").val();
 		var price = $("#price").val();
 		var sell = confirmSell(price);
-		
+
 		if (sell == true) {
 			$.ajax({
 				type : "POST",
@@ -34,7 +34,7 @@ $(document).ready(function(){
 });
 
 function confirmSell(price) {
-	var r = confirm("You are about to earn: $"+price);
+	var r = confirm("You are about to earn: $" + price);
 	if (r == true) {
 		return true;
 	} else {
@@ -42,6 +42,6 @@ function confirmSell(price) {
 	}
 }
 
-function clearForm(){
+function clearForm() {
 	$("#sellBookForm")[0].reset();
 }

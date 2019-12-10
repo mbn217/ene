@@ -10,7 +10,7 @@ public class BookModel {
 	private String publishedDate;
 	private Double price;
 	private int userId;
-	
+
 	public BookModel(int id, String bookTitle, String author, String bookCategory, String isbn, String publishedDate,
 			Double price, int userId) {
 		super();
@@ -27,40 +27,51 @@ public class BookModel {
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getBookTitle() {
 		return bookTitle;
 	}
+
 	public void setBookTitle(String bookTitle) {
 		this.bookTitle = bookTitle;
 	}
+
 	public String getBookCategory() {
 		return bookCategory;
 	}
+
 	public void setBookCategory(String bookCategory) {
 		this.bookCategory = bookCategory;
 	}
+
 	public String getAuthor() {
 		return author;
 	}
+
 	public void setAuthor(String author) {
 		this.author = author;
 	}
+
 	public String getIsbn() {
 		return isbn;
 	}
+
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
+
 	public String getPublishedDate() {
 		return publishedDate;
 	}
+
 	public void setPublishedDate(String publishedDate) {
 		this.publishedDate = publishedDate;
 	}
-	
+
 	public Double getPrice() {
 		return price;
 	}
@@ -82,6 +93,5 @@ public class BookModel {
 		return "BookModel [bookTitle=" + bookTitle + ", bookCategory=" + bookCategory + ", author=" + author + ", isbn="
 				+ isbn + ", publishedDate=" + publishedDate + "]";
 	}
-	
-	
+
 }

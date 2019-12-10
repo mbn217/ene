@@ -1,13 +1,12 @@
+$(document).ready(function() {
 
-$(document).ready(function(){
-	
 	$('#checkoutBtn').css("display", "none");
-	
+
 	$("#searchBooksToBuy").submit(function(event) {
 		event.preventDefault();
-		
+
 		var formData = {};
-		
+
 		formData["bookTitle"] = $("#bookTitle").val();
 		formData["author"] = $("#author").val();
 		formData["isbn"] = $("#isbn").val();
@@ -29,22 +28,39 @@ $(document).ready(function(){
 	});
 });
 
-function populateSearchResults(bookList){
-	if(bookList != undefined){
+function populateSearchResults(bookList) {
+	if (bookList != undefined) {
 		$('#availableBooksTable tbody').empty();
-		$.each(bookList, function(){
-		    var html = "<tr><td>"+ this.id +"</td><td>" + this.bookTitle + "</td><td>" + this.author+ "</td>"
-		    +"<td>" + this.bookCategory + "</td><td>" + this.isbn+ "</td>"
-		    +"<td>" + this.publishedDate + "</td><td>$"+this.price+ "</td>"
-		    +"<td><button class='btn btn-primary' onclick='addToCart($(this));'>Add to Cart</button></td></tr>";
-		    $('#availableBooksTable tbody').append(html);
-		});
+		$
+				.each(
+						bookList,
+						function() {
+							var html = "<tr><td>"
+									+ this.id
+									+ "</td><td>"
+									+ this.bookTitle
+									+ "</td><td>"
+									+ this.author
+									+ "</td>"
+									+ "<td>"
+									+ this.bookCategory
+									+ "</td><td>"
+									+ this.isbn
+									+ "</td>"
+									+ "<td>"
+									+ this.publishedDate
+									+ "</td><td>$"
+									+ this.price
+									+ "</td>"
+									+ "<td><button class='btn btn-primary' onclick='addToCart($(this));'>Add to Cart</button></td></tr>";
+							$('#availableBooksTable tbody').append(html);
+						});
 	}
 }
 
-function addToCart(btn){
+function addToCart(btn) {
 	var bookId = btn.closest("tr").find('td:first').text();
-    btn.prop("disabled",true);
+	btn.prop("disabled", true);
 	$.ajax({
 		type : "GET",
 		contentType : "application/json",
@@ -62,5 +78,3 @@ function addToCart(btn){
 		}
 	});
 }
-
-

@@ -14,7 +14,7 @@ public class BookServiceImpl implements BookService {
 
 	@Autowired
 	private BookDAO bookDAO;
-	
+
 	@Override
 	public int sellBook(BookModel book) {
 		return bookDAO.sellBook(book);
@@ -34,7 +34,7 @@ public class BookServiceImpl implements BookService {
 	public List<BookModel> getRecommendedBooks(List<BookModel> booksInCart) {
 		String bookCategory = "";
 		Integer bookAlreadyAdded = 0;
-		for(BookModel book : booksInCart) {
+		for (BookModel book : booksInCart) {
 			bookCategory = book.getBookCategory();
 			bookAlreadyAdded = book.getId();
 		}
@@ -49,8 +49,8 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public RentBook getRentBook(int id) {
 		BookModel book = bookDAO.getBook(id);
-		RentBook rentBook = new RentBook(id, book.getBookTitle(), book.getAuthor(), book.getBookCategory(), book.getIsbn()
-				, book.getPublishedDate(), book.getPrice(), book.getUserId());
+		RentBook rentBook = new RentBook(id, book.getBookTitle(), book.getAuthor(), book.getBookCategory(),
+				book.getIsbn(), book.getPublishedDate(), book.getPrice(), book.getUserId());
 		return rentBook;
 	}
 

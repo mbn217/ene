@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <header>
 	<!-- A grey horizontal navbar that becomes vertical on small screens -->
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+	<nav class="navbar navbar-expand-sm bg-dark justify-content-center">
 		<a class="logo" href="/">
 			<img class="navbar-brand" src="img/logo.png">
 			</a>
 			<!-- Links -->
-			<ul class="navbar-nav">
+			<ul class="nav bar" id="mynavbar">
 				<li class="nav-item">
 					<a class="nav-link" href="howitworks">How It Works</a>
 				</li>
