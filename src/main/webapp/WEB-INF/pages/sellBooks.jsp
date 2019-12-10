@@ -81,6 +81,6 @@
 			</form>
 	</body>
 
-<jsp:include page="../pages/footer.jsp"/>
+<%-- <jsp:include page="../pages/footer.jsp"/> --%>
 
 </html>
