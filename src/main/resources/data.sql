@@ -1,30 +1,7 @@
-INSERT INTO users VALUES (1,'test','test','test@email.com');
-INSERT INTO users VALUES (2,'admin','admin','admin@email.com');
+INSERT INTO application VALUES ('NDA','200200');
+INSERT INTO application VALUES ('ANDA','77772');
 
-INSERT INTO book VALUES (1,'Head First Java, 2nd Edition','Katha Sierra','Technical Books','0596009208', '2005-02-01', 20, 1);
-INSERT INTO book VALUES (2,'Learning Python, Fourth Edition','Mark Lutz','Technical Books','0596158068', '2009-09-01', 19, 1);
-INSERT INTO book VALUES (3,'Head First Python','Paul Barry','Technical Books','1449382673', '2014-08-29', 21, 1);
-INSERT INTO book VALUES (4,'Dive Into Python 3','Mark Pilgrim','Technical Books','1430224150', '2004-01-01', 12, 1);
-INSERT INTO book VALUES (5,'Effective C++, Twelfth Edition','Scott Meyers','Technical Books','1491903995', '2018-05-11', 30, 1);
-INSERT INTO book VALUES (6,'The C++ Programming Language','Bjarne Stroustrup','Technical Books','0321563840', '1985-10-01', 10, 1);
-INSERT INTO book VALUES (7,'Learning SQL','Alan Beaulieu','Technical Books','9780596520830', '2005-08-22', 17, 1);
-INSERT INTO book VALUES (8,'Head Fist SQL','Lynn Beighley','Technical Books','0596526849', '2007-09-01', 22, 1);
-INSERT INTO book VALUES (9,'Linux Pocket Guide, Second Edition','Daniel Barrett','Technical Books','1449316697', '2012-06-12', 9, 1);
-INSERT INTO book VALUES (10,'Harry Potter and the Chamber of Secrets','J. K. Rowling','Novels','0439064873', '2000-08-15', 20, 1);
-INSERT INTO book VALUES (11,'Harry Potter and the Deathly Hallows','J. K. Rowling','Novels','0545139708', '2007-06-21', 21, 1);
-INSERT INTO book VALUES (12,'Harry Potter and the Prisoner of Azkaban','J. K. Rowling','Novels','0545582938', '2013-08-27', 19, 1);
-INSERT INTO book VALUES (13,'Spice and Wolf Vol. 1','Isuna Hasekura','Novels','0759531048', '2009-12-01', 9, 1);
-INSERT INTO book VALUES (14,'Spice and Wolf Vol. 2','Isuna Hasekura','Novels','0759531062', '2010-06-01', 10, 1);
-INSERT INTO book VALUES (15,'Spice and Wolf Vol. 3','Isuna Hasekura','Novels','0759531079', '2010-12-01', 11, 1);
-INSERT INTO book VALUES (16,'The KJ3 Literal Translation Bible','Jay Green','Religious','1589604032', '2010-01-01', 15, 1);
-INSERT INTO book VALUES (17,'Belzebubs','JP Ahonen','Novels','1603094429', '2007-10-18', 15, 1);
-INSERT INTO book VALUES (18,'Spice and Wolf Vol. 1 Manga','Isuna Hasekura','Comic','0316073393', '2015-04-28', 13, 1);
-INSERT INTO book VALUES (19,'Spice and Wolf Vol. 2 Manga','Isuna Hasekura','Comic','0316102326', '2015-03-24', 12, 1);
-INSERT INTO book VALUES (20,'Spice and Wolf Vol. 3 Manga','Isuna Hasekura','Comic','0316102342', '2010-05-05', 11, 1);
-INSERT INTO book VALUES (21,'The Fifth Risk','Michael Lewis','Political','1324002642', '2018-10-02', 16, 1);
-INSERT INTO book VALUES (22,'Fire and Fury: Inside the Trump White House','Michael Wolff','Political','1250158060', '2018-01-05', 4, 1);
-INSERT INTO book VALUES (23,'A Warning','Anonymous','Political','1538718464', '2019-11-19', 19, 1);
-INSERT INTO book VALUES (24,'What Happened','Hillary Clinton','Political','1501175564', '2017-09-12', 14, 1);
-INSERT INTO book VALUES (25,'Permanent Record','Edward Snowden','Political','1250237238', '2019-09-17', 18, 1);
-INSERT INTO book VALUES (26,'On Liberty, Dover Thrift Editions','John Mill','Political','0486421308', '2002-06-19', 4, 1);
+INSERT INTO generalInfo VALUES ('Rev-biometrics-21','N/A','Nothing');
+INSERT INTO generalInfo VALUES ('rev-safetyIIS-06','N/A','Nothing');
+
 
