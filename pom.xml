@@ -11,8 +11,10 @@
 	<groupId>edu.umgc.cmsc495</groupId>
 	<artifactId>ene</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>ene</name>
 	<description>Demo project for Book Store</description>
+
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -38,11 +40,12 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency> -->
 		    <!-- Tomcat for JSP rendering -->
-	    <dependency>
-	      <groupId>org.apache.tomcat.embed</groupId>
-	      <artifactId>tomcat-embed-jasper</artifactId>
-<!--	      <scope>provided</scope>-->
-	    </dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper</artifactId>
+			<version>9.0.24</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -56,7 +59,7 @@
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
-<!--		    <version>1.2</version>-->
+		    <version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
