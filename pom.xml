@@ -12,6 +12,7 @@
 	<artifactId>ene</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ene</name>
+	<packaging>war</packaging>
 	<description>Demo project for Book Store</description>
 
 	<properties>
