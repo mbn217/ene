@@ -8,9 +8,8 @@ RUN mvn clean package -DskipTests
 #
 # Package stage
 #
-FROM tomcat:9.0.24
-VOLUME /tmp
-COPY --from=build /target/ene-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ene.war
+FROM openjdk:8-jdk-alpine
+COPY --from=build /target/ene-0.0.1-SNAPSHOT.jar ene.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /usr/local/tomcat/webapps/ene.war" ]
+ENTRYPOINT [ "java", "-jar", "ene.jar" ]
