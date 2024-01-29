@@ -51,6 +51,9 @@ public class EneController {
 		return "login_register";
 	}
 
+	@GetMapping("/rappidtech-form")
+	public String rappidtechForm(){return "rappidtechform";}
+
 	/*
 	 * Returns Home page when the Logout is clicked also, removes everything from
 	 * current session
