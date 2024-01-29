@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Example</title>
+    <title>Double Click Popup Example</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,7 +35,8 @@
 </head>
 <body>
 
-<button onclick="openPopup()">Open Popup</button>
+<!-- Use ondblclick to trigger openPopup on double click -->
+<button ondblclick="openPopup()">Open Popup (Double Click)</button>
 
 <div id="popupContainer">
     <p>This is a popup!</p>
