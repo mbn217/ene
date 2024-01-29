@@ -54,6 +54,9 @@ public class EneController {
 	@GetMapping("/rappidtech-form")
 	public String rappidtechForm(){return "rappidtechform";}
 
+	@GetMapping("/doubleclick")
+	public String doubleClick(){return "doubleclick";}
+
 	/*
 	 * Returns Home page when the Logout is clicked also, removes everything from
 	 * current session
